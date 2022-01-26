@@ -21,7 +21,7 @@ function AboutCard() {
             building skills. I am interested in learning about new opportunities
             and can be reached through this portfolio, by email:
             <a href="mailto:mharizanova@yahoo.com" target="_blank">
-              jamie.rachael@gmail.com,{' '}
+              mharizanova@yahoo.com,{' '}
             </a>{' '}
             through<a href="https://github.com/mharizanova8703"> GitHub</a>, or
             through{' '}

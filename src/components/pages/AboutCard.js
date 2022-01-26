@@ -20,9 +20,9 @@ function AboutCard() {
             can leverage my unique blend of technical, cultural and relationship
             building skills. I am interested in learning about new opportunities
             and can be reached through this portfolio, by email:
-            <a href="mailto:mharizanova@yahoo.com" target="_blank">
-              jamie.rachael@gmail.com,{' '}
-            </a>{' '}
+            /* <a href="mailto:mharizanova@yahoo.com" target="_blank">
+              mharizanova@yahoo.com,
+            </a> */
             through<a href="https://github.com/mharizanova8703"> GitHub</a>, or
             through{' '}
             <a href="https://www.linkedin.com/in/mariya-harizanova-a9651b219/">
