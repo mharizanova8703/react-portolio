@@ -2,42 +2,42 @@
   {
     "id": 1,
     "name": "Note-TakeR",
-    "image": "src/assets/Note-taker.png?raw=true",
+    "image": "https://user-images.githubusercontent.com/85656320/140813183-32442c0a-daf0-4c41-94bd-079fae9b4086.png",
     "project": "Note-TakeR",
     "location": "https://notetaker007.herokuapp.com/"
   },
   {
     "id": 2,
     "name": "Password_Generator",
-    "image": "https://github.com/mharizanova8703/react-portolio/src/assets/?raw=true",
+    "image": "https://user-images.githubusercontent.com/85656320/133150499-97da2315-16c6-4db4-a0ef-597f27545f0b.png",
     "project": "Password_Generator",
     "location": "https://mharizanova8703.github.io/Password-_Generator/"
   },
   {
     "id": 3,
     "name": "materials-trader",
-    "image": "https://github.com/mharizanova8703/react-portolio/src/assets/material-trader.png?raw=true",
+    "image": "https://github.com/mharizanova8703/materials-trader/raw/main/assets/demo/Materials_Trader_Mobile_Views.png",
     "project": "material-trader",
     "location": "https://materials-trader.herokuapp.com/"
   },
   {
     "id": 4,
     "name": "PWA-Note-Text-Editor",
-    "image": "https://github.com/mharizanova8703/react-portolio/src/assets/Text-Editor.png?raw=true",
+    "image": "https://user-images.githubusercontent.com/85656320/150209065-00250320-9338-4156-8fe4-d64d4ecbb576.png",
     "project": "PWA-Note-Text-Editor",
     "location": "https://noteeditor.herokuapp.com/"
   },
   {
     "id": 5,
     "name": "Tech Blog",
-    "image": "https://github.com/mharizanova8703/react-portfolio/src/assets/Tech Blog.png?raw=true",
+    "image": "https://user-images.githubusercontent.com/85656320/144939194-d82a8ca6-c469-4489-beeb-81e40ee2d616.png",
     "project": "Tech Blog",
     "location": "https://guarded-earth-68916.herokuapp.com/"
   },
   {
     "id": 6,
     "name": "Code Quiz",
-    "image": "https://github.com/mharizanova8703/react-portolio/src/assets/Code Quiz.png?raw=true",
+    "image": "https://user-images.githubusercontent.com/85656320/138106920-67fdcc48-3524-46f2-90a3-68d6de9c9adb.png",
     "project": "Code Quiz",
     "location": "https://mharizanova8703.github.io/Code-Quiz/"
   }

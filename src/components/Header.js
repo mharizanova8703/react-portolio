@@ -5,7 +5,7 @@ import React from "react";
 function Header(props) {
     return (
 
-        <header className="header bg-info">
+        <header id="heater1" className="header bg-info">
             <a href="https://github.com/mharizanova8703"> <h1 className="text-white">Mariya Harizanova </h1></a>
         </header>
 
