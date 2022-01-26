@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-portolio/static/css/main.f2dd62b9.css",
+    "main.js": "/react-portolio/static/js/main.23053010.js",
+    "static/media/HomeProfile.jpg": "/react-portolio/static/media/HomeProfile.004bb2e7ffbc345df6e3.jpg",
+    "static/media/Profile.jpeg": "/react-portolio/static/media/Profile.8d835a8b19aee2cd53f9.jpeg",
+    "static/media/resume.png": "/react-portolio/static/media/resume.bb18ff6c7a72d2c13a28.png",
+    "index.html": "/react-portolio/index.html",
+    "main.f2dd62b9.css.map": "/react-portolio/static/css/main.f2dd62b9.css.map",
+    "main.23053010.js.map": "/react-portolio/static/js/main.23053010.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2dd62b9.css",
+    "static/js/main.23053010.js"
+  ]
+}
