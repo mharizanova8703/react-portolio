@@ -18,9 +18,9 @@
     "name": "materials-trader",
     "image": "https://github.com/mharizanova8703/materials-trader/raw/main/assets/demo/Materials_Trader_Mobile_Views.png",
     "project": "material-trader",
-    "location": "https://materials-trader.herokuapp.com/"
+    "location":  "https://materials-trader.herokuapp.com/"
   },
-  {
+{
     "id": 4,
     "name": "PWA-Note-Text-Editor",
     "image": "https://user-images.githubusercontent.com/85656320/150209065-00250320-9338-4156-8fe4-d64d4ecbb576.png",

@@ -7,11 +7,7 @@ function HomeCard() {
       <div className="col-4">
         <div className="card card-home">
           <div className="card-body">
-            {/* <img
-              src={HomeProfile}
-              alt="home-profile-photo"
-              className="ome-profile-photo mb-3"
-            ></img> */}
+            
             <h4 className="card-title text-center">Mariya Harizanova</h4>
             <h5 className="card-title text-center">Full Stack Web developer</h5>
             <p className="card-text text-center">

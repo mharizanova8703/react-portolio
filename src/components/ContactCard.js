@@ -1,5 +1,5 @@
 // import React from 'react'
-// import ContactPNG from '../assets/contact.png'
+ //import ContactPNG from '../assets/contact.png'
 
 // function ContactCard(props) {
 //   return (
@@ -45,69 +45,94 @@
 
 // export default ContactCard
 import React, { useState } from "react";
+import { validateEmail, validateMessage } from "../components/utils/form-helper";
 
-const FORM_ENDPOINT = ""; // TODO - fill on the later step
 
-const ContactCard = () => {
-  const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = () => {
-    setTimeout(() => {
-      setSubmitted(true);
-    }, 100);
+function Form() {
+  // Create state variables for the fields in the form
+  // We are also setting their initial values to an empty string
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, username, and password
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'name') {
+      setName(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
   };
 
-  if (submitted) {
-    return (
-      <>
-        <div className="text-2xl">Thank you!</div>
-        <div className="text-md">We'll be in touch soon.</div>
-      </>
-    );
-  }
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+
+    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    if (!validateEmail(email) || !name) {
+      setErrorMessage('Email or name is invalid');
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+    if (!validateMessage(message)) {
+      setErrorMessage(
+        `Must provide a Message`
+      );
+      return;
+    }
+    alert(`Thanks for your message ${name}!`);
+
+    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    setName('');
+    setMessage('');
+    setEmail('');
+  };
 
   return (
-    <form
-      action={FORM_ENDPOINT}
-      onSubmit={handleSubmit}
-      method="POST"
-      target="_blank"
-    >
-      <div className="mb-3 pt-0">
+    <div>
+      <p>Hello {name}</p>
+      <form className="form">
         <input
-          type="text"
-          placeholder="Your name"
-          name="name"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-          required
-        />
-      </div>
-      <div className="mb-3 pt-0">
-        <input
-          type="email"
-          placeholder="Email"
+          value={email}
           name="email"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-          required
+          onChange={handleInputChange}
+          type="email"
+          placeholder="email"
         />
-      </div>
-      <div className="mb-3 pt-0">
-        <textarea
-          placeholder="Your message"
+        <input
+          value={name}
+          name="name"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="name"
+        />
+        <input 
+        id="messageField"
+          value={message}
           name="message"
-          className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
-          required
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Message"
         />
-      </div>
-      <div className="mb-3 pt-0">
-        <button
-          className="bg-blue-500 text-white active:bg-blue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-          type="submit"
-        >
-          Send a message
-        </button>
-      </div>
-    </form>
+        <button id ="submitBtn" type="button" onClick={handleFormSubmit}>Submit</button>
+      </form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
+    </div>
   );
-};
+}
 
-export default ContactCard;
+
+export default Form;

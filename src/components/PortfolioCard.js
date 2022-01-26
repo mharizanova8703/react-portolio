@@ -19,6 +19,7 @@ function PortfolioCard(props) {
                     </li>
                     <li>
                         <strong>Demo:</strong> {props.location}
+                  
                     </li>
 
                 </ul>

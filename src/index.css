@@ -3,9 +3,7 @@
   margin-right: 3%;
   background-color: pink;
 }
-.heather1 {
-  background-color: palevioletred;
-}
+
 .header {
   font-family: 'Fruktur', cursive;
   background-color: palevioletred;
@@ -80,7 +78,7 @@ body {
   background-image: url('assets/screen.png');
 }
 .nav-tabs {
-  border: 2px lightgray solid;
+  border: 4px rgb(211, 211, 211) solid;
 }
 
 .nav-link {
@@ -148,7 +146,25 @@ body {
   margin-top: 10%;
   margin-left: 33%;
 }
-
-.ome-profile-photo {
-  margin-left: 20%;
+input {
+  text-align: center;
+  margin: 10px auto;
+  width: 50%;
 }
+form {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  margin: 20px auto;
+}
+#messageField {
+  height: 200px;
+}
+#submitBtn {
+  width: 50%;
+  align-self: center;
+}
+/* .ome-profile-photo {
+  margin-left: 20%;
+} */
